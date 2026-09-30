@@ -17,7 +17,7 @@ export default function Contact() {
           <h2 className={styles.statement}>
             LET&apos;S BUILD SOMETHING TOGETHER.
           </h2>
-          
+
           <div className={styles.emailContainer}>
             <span className={styles.emailLabel}>Get in touch:</span>
             <a href="mailto:fahadiqbalaps@gmail.com" className={styles.emailLink}>
@@ -28,7 +28,7 @@ export default function Contact() {
 
           <div className={styles.socialRow}>
             <a
-              href="https://linkedin.com/in/fadyyyy"
+              href="https://linkedin.com/in/fadyyy"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.socialLink}

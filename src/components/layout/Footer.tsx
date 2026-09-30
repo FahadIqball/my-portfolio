@@ -13,7 +13,7 @@ export default function Footer() {
           <span className="mono-label">© {currentYear} FAHAD IQBAL</span>
           <span className={styles.tagline}>Crafted with care · Code first</span>
         </div>
-        
+
         <div className={styles.socials}>
           <a
             href="https://github.com/FahadIqball"
@@ -25,7 +25,7 @@ export default function Footer() {
             <TechIcon slug="github" size={18} />
           </a>
           <a
-            href="https://linkedin.com/in/fadyyyy"
+            href="https://linkedin.com/in/fadyyy"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn Profile"
