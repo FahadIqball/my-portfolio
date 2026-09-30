@@ -1,0 +1,207 @@
+.carouselContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.navHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.indexLabel {
+  font-family: var(--font-mono), monospace;
+}
+
+.controls {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.controlBtn {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  width: 44px;
+  height: 44px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.controlBtn:hover {
+  border-color: var(--border-hover);
+  background-color: var(--bg-secondary);
+}
+
+.sliderWrapper {
+  position: relative;
+  min-height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+}
+
+.slideCard {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background-color: var(--surface);
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: grab;
+}
+
+.slideCard:active {
+  cursor: grabbing;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.projectTitle {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+.projectDesc {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  max-width: 70ch;
+}
+
+.projectDetailsBox {
+  border-left: 2px solid var(--text-primary);
+  padding-left: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.detailsHeader {
+  display: block;
+  font-family: var(--font-mono), monospace;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+  margin-bottom: 0.25rem;
+}
+
+.projectDetailsText {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.techStack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.75rem;
+  margin-bottom: 2.5rem;
+}
+
+.techTag {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  background-color: var(--bg-secondary);
+  padding: 0.25rem 0.6rem;
+  border-radius: 3px;
+  border: 1px solid var(--border);
+}
+
+.linksRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  border-top: 1px solid var(--border);
+  padding-top: 1.5rem;
+}
+
+.detailLink {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-primary);
+  transition: transform 0.2s ease;
+}
+
+.detailLink:hover {
+  transform: translateX(4px);
+}
+
+.externalLinks {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.iconLink {
+  color: var(--text-secondary);
+  transition: color 0.2s ease;
+}
+
+.iconLink:hover {
+  color: var(--text-primary);
+}
+
+.indicators {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.indicatorDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--border);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.indicatorDot:hover {
+  background-color: var(--border-hover);
+}
+
+.activeDot {
+  background-color: var(--text-primary);
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  .slideCard {
+    padding: 2rem 1.5rem;
+  }
+  .projectTitle {
+    font-size: 1.5rem;
+  }
+  .projectDesc {
+    font-size: 1rem;
+  }
+  .sliderWrapper {
+    min-height: 450px;
+  }
+  .techStack {
+    margin-bottom: 1.5rem;
+  }
+}

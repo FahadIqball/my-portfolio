@@ -1,0 +1,196 @@
+.experienceSection {
+  padding: 8rem 0;
+  background-color: var(--bg-primary);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 4rem;
+  }
+  .header {
+    margin-bottom: 0;
+  }
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-top: 0.5rem;
+  color: var(--text-primary);
+  letter-spacing: -0.03em;
+}
+
+.line {
+  width: 60px;
+  height: 2px;
+  background-color: var(--text-primary);
+  margin-top: 1rem;
+}
+
+.timelineList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background-color: var(--surface);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  border-color: var(--border-hover);
+}
+
+.expanded {
+  border-color: var(--text-primary);
+}
+
+.cardHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  color: inherit;
+}
+
+.headerInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.roleCompany {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.role {
+  font-family: var(--font-sans), sans-serif;
+}
+
+.divider {
+  font-family: var(--font-mono), monospace;
+  color: var(--text-tertiary);
+}
+
+.company {
+  font-family: var(--font-mono), monospace;
+}
+
+.period {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.chevron {
+  color: var(--text-secondary);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rotate {
+  transform: rotate(180deg);
+  color: var(--text-primary);
+}
+
+/* Smooth Accordion Height Transition using modern CSS Grid */
+.cardContent {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.contentOpen {
+  grid-template-rows: 1fr;
+}
+
+.contentInner {
+  overflow: hidden;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0 1.5rem 1rem 1.5rem;
+  font-family: var(--font-mono), monospace;
+  font-size: 0.8rem;
+  color: var(--text-tertiary);
+}
+
+.bullets {
+  list-style: none;
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.bulletItem {
+  position: relative;
+  padding-left: 1.25rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.bulletItem::before {
+  content: "·";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-family: var(--font-mono), monospace;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1;
+  color: var(--text-primary);
+}
+
+@media (max-width: 768px) {
+  .experienceSection {
+    padding: 5rem 0;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .roleCompany {
+    font-size: 1.05rem;
+  }
+  .cardHeader {
+    padding: 1.25rem;
+  }
+  .location {
+    padding: 0 1.25rem 0.75rem 1.25rem;
+  }
+  .bullets {
+    padding: 0 1.25rem 1.25rem 1.25rem;
+  }
+  .bulletItem {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,241 @@
+.postPage {
+  max-width: 75ch; /* strict reading width */
+  padding: 4rem 1.5rem;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono), monospace;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  margin-bottom: 3rem;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.backLink:hover {
+  color: var(--text-primary);
+  transform: translateX(-4px);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.metaRow {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.badge {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--text-primary);
+  border: 1px solid var(--text-primary);
+  padding: 0.2rem 0.6rem;
+  border-radius: 3px;
+}
+
+.date {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.metaIcon {
+  color: var(--text-tertiary);
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-family: var(--font-mono), monospace;
+  font-size: 0.8rem;
+  color: var(--text-tertiary);
+}
+
+.divider {
+  border: none;
+  height: 1px;
+  background-color: var(--border);
+  margin-bottom: 3.5rem;
+}
+
+/* Markdown Reading styling */
+.content {
+  margin-bottom: 5rem;
+}
+
+.markdownBody {
+  font-size: 1.125rem;
+  line-height: 1.9;
+  color: var(--text-secondary);
+}
+
+.markdownBody h2,
+.markdownBody h3,
+.markdownBody h4 {
+  color: var(--text-primary);
+  margin-top: 3rem;
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+.markdownBody h2 {
+  font-size: 1.75rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.5rem;
+}
+
+.markdownBody h3 {
+  font-size: 1.4rem;
+}
+
+.markdownBody p {
+  margin-bottom: 1.75rem;
+}
+
+.markdownBody blockquote {
+  border-left: 2px solid var(--text-primary);
+  padding: 0.5rem 0 0.5rem 1.5rem;
+  margin: 2.5rem 0;
+  font-style: italic;
+  color: var(--text-secondary);
+}
+
+.markdownBody code {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.9em;
+  background-color: var(--bg-secondary);
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+}
+
+.markdownBody pre {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border);
+  padding: 1.5rem;
+  border-radius: 4px;
+  overflow-x: auto;
+  margin: 2rem 0;
+}
+
+.markdownBody pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--text-primary);
+}
+
+.markdownBody ul,
+.markdownBody ol {
+  margin-bottom: 1.75rem;
+  padding-left: 2rem;
+}
+
+.markdownBody li {
+  margin-bottom: 0.5rem;
+}
+
+.markdownBody hr {
+  border: none;
+  height: 1px;
+  background-color: var(--border);
+  margin: 3rem 0;
+}
+
+/* Prev / Next Pagination Section */
+.navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  border-top: 1px solid var(--border);
+  padding-top: 3rem;
+}
+
+.navCard {
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+  background-color: var(--surface);
+}
+
+.navCard:hover {
+  border-color: var(--text-primary);
+  background-color: var(--bg-secondary);
+}
+
+.navCardRight {
+  align-items: flex-end;
+  text-align: right;
+}
+
+.navLabel {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.navTitle {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--text-primary);
+}
+
+.emptyCard {
+  visibility: hidden;
+}
+
+@media (max-width: 768px) {
+  .postPage {
+    padding: 3rem 1.5rem;
+  }
+  .title {
+    font-size: 2.25rem;
+  }
+  .markdownBody {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+  .navigation {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
