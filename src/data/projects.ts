@@ -20,13 +20,13 @@ export const projects: ProjectItem[] = [
   },
   {
     id: "miss-stitch",
-    title: "Miss Stitch — Luxury Couture & Atelier System",
-    description: "A full-stack Pakistani luxury ethnic e-commerce platform and workshop atelier operations system bridging unstitched designer fabrics with bespoke made-to-measure tailoring.",
-    tech: ["Next.js 16", "React 19", "Supabase", "Tailwind CSS v4", "Zustand"],
+    title: "Miss Stitch",
+    description: "A full-stack bespoke luxury fashion e-commerce platform and atelier operations system combining designer fabrics with custom made-to-measure tailoring.",
+    tech: ["Next.js 16", "React 19", "Supabase", "Tailwind CSS", "Zustand"],
     slug: "miss-stitch",
     github: "https://github.com/FahadIqball/Miss-Stitch-Web",
-    live: "https://miss-stitch.vercel.app",
-    details: "Architected the full-stack system with Next.js 16 App Router, Supabase PostgreSQL RLS, bespoke tailoring measurement engines, and a workshop operations portal with printable tailor job cards.",
+    live: "https://miss-stitch-web.vercel.app",
+    details: "Architected the full-stack system with Next.js 16 App Router, custom measurement engines, and a workshop operations portal for order management.",
   },
 
   {
