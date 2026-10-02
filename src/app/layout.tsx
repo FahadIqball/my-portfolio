@@ -18,14 +18,19 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Fahad Iqbal · React Native Developer",
+  title: "Fahad Iqbal · Full-Stack & Mobile Developer",
   description:
-    "Portfolio of Fahad Iqbal, a React Native Developer specializing in scalable mobile architecture, real-time WebSockets, VoIP, and AI features.",
+    "Portfolio of Fahad Iqbal, a Full-Stack & Mobile Developer specializing in high-performance web applications, scalable mobile architecture, Next.js, React Native, and AI integrations.",
   keywords: [
+    "Full-Stack Developer",
+    "Web Developer",
+    "Mobile Developer",
+    "Next.js",
+    "React",
     "React Native",
     "Expo",
-    "Mobile Developer",
     "TypeScript",
+    "Supabase",
     "iOS Developer",
     "Android Developer",
     "Fahad Iqbal",

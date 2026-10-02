@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import styles from "./Hero.module.css";
 
 export default function Hero() {
-  const statement = "I build mobile experiences that scale";
+  const statement = "I build web & mobile products that scale";
   
   // Stagger parameters
   const containerVariants = {
@@ -39,7 +39,7 @@ export default function Hero() {
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           className={styles.introLabel}
         >
-          <span className="mono-label">React Native Developer</span>
+          <span className="mono-label">Full-Stack & Mobile Developer</span>
         </motion.div>
 
         <motion.h1
@@ -73,9 +73,9 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 1.5, ease: [0.16, 1, 0.3, 1] }}
           className={styles.subText}
         >
-          Adept at bridging clean UI development with complex mobile systems. 
-          Specializing in real-time WebSockets, VoIP integrations, and custom native handles 
-          for high-performance iOS & Android applications.
+          Adept at bridging clean UI architecture with robust full-stack and mobile systems. 
+          Specializing in modern web applications with Next.js, relational backends with Supabase, 
+          and high-performance cross-platform mobile apps with React Native.
         </motion.p>
 
         <motion.div

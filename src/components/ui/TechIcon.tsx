@@ -13,6 +13,8 @@ import {
   siGithub,
   siAndroidstudio,
   siPostman,
+  siNextdotjs,
+  siTailwindcss,
 } from "simple-icons";
 import { zustandPath, reactNativePath } from "./customIcons";
 
@@ -25,6 +27,22 @@ export default function TechIcon({ slug, size = 20 }: TechIconProps) {
   const normalizedSlug = slug.toLowerCase().replace(/[^a-z0-9]/g, "");
 
   const icons: Record<string, { path: string; viewBox?: string }> = {
+    nextjs: {
+      viewBox: "0 0 24 24",
+      path: siNextdotjs.path,
+    },
+    next: {
+      viewBox: "0 0 24 24",
+      path: siNextdotjs.path,
+    },
+    tailwindcss: {
+      viewBox: "0 0 24 24",
+      path: siTailwindcss.path,
+    },
+    tailwind: {
+      viewBox: "0 0 24 24",
+      path: siTailwindcss.path,
+    },
     typescript: {
       viewBox: "0 0 24 24",
       path: siTypescript.path,

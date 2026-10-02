@@ -3,6 +3,11 @@ export interface SkillCategory {
   items: { name: string; iconSlug: string }[];
 }
 
+export interface CapabilityItem {
+  title: string;
+  icon: "globe" | "database" | "bell" | "zap" | "smartphone" | "credit-card";
+}
+
 export const skillCategories: SkillCategory[] = [
   {
     title: "Languages",
@@ -16,22 +21,24 @@ export const skillCategories: SkillCategory[] = [
   {
     title: "Frameworks & State",
     items: [
-      { name: "React Native", iconSlug: "reactnative" },
+      { name: "Next.js", iconSlug: "nextjs" },
       { name: "React", iconSlug: "react" },
+      { name: "React Native", iconSlug: "reactnative" },
       { name: "Expo", iconSlug: "expo" },
-      { name: "Redux", iconSlug: "redux" },
+      { name: "Tailwind CSS", iconSlug: "tailwindcss" },
       { name: "Zustand", iconSlug: "zustand" },
+      { name: "Redux", iconSlug: "redux" },
     ],
   },
   {
     title: "Databases & Cloud",
     items: [
-      { name: "Firebase", iconSlug: "firebase" },
       { name: "Supabase", iconSlug: "supabase" },
+      { name: "Firebase", iconSlug: "firebase" },
     ],
   },
   {
-    title: "Tools & OS",
+    title: "Tools & Ecosystem",
     items: [
       { name: "Git", iconSlug: "git" },
       { name: "GitHub", iconSlug: "github" },
@@ -41,11 +48,11 @@ export const skillCategories: SkillCategory[] = [
   },
 ];
 
-export const mobileFeatures = [
-  "Push Notifications",
-  "Deep Linking",
-  "Background Tasks",
-  "Native Modules Integration",
-  "Google Maps API",
-  "Payment Gateways (Stripe, etc.)",
+export const coreCapabilities: CapabilityItem[] = [
+  { title: "Server-Side Rendering (SSR) & App Router", icon: "globe" },
+  { title: "Full-Stack Relational Databases & RLS", icon: "database" },
+  { title: "Push Notifications & Deep Linking", icon: "bell" },
+  { title: "Real-Time WebSockets & Live State Sync", icon: "zap" },
+  { title: "Native Modules & Device Integrations", icon: "smartphone" },
+  { title: "Payment Gateways & E-Commerce Checkouts", icon: "credit-card" },
 ];

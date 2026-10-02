@@ -4,7 +4,7 @@ summary: "Advanced Android app intelligence tool that detects mobile application
 tech: ["React Native", "TypeScript", "Kotlin", "Android", "APK Analysis", "Cross-Platform Mobile"]
 github: "https://github.com/FahadIqball/AppFrameworkDetector"
 live: "https://appetize.io/app/b_zht6uqrwhetakondaz3ebcj33e"
-role: "Full Stack Mobile Developer & Security Researcher"
+role: "Full Stack Mobile Developer"
 period: "2024-2025"
 layout: "split"
 images:

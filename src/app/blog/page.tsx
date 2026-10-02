@@ -38,7 +38,7 @@ export default function BlogPage() {
           <span className="mono-label">WRITING & NOTES</span>
           <h1 className={styles.title}>THE DEV JOURNAL</h1>
           <p className={styles.subtitle}>
-            Thoughts, tutorials, and micro-learnings compiled while shipping mobile apps.
+            Thoughts, tutorials, and engineering notes compiled while building web & mobile products.
           </p>
         </header>
 

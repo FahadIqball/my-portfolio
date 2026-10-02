@@ -13,20 +13,20 @@ export default function About() {
 
         <div className={styles.content}>
           <p className={styles.paragraph}>
-            I am a software engineer specializing in cross-platform mobile architecture. 
-            My daily work focuses on building robust Android and iOS applications with React Native, 
-            where I bridge high-fidelity UI designs with complex system integrations.
+            I am a full-stack engineer specializing in modern web and mobile application architecture. 
+            My work focuses on building high-performance web platforms with Next.js alongside 
+            scalable cross-platform mobile applications with React Native, bridging aesthetic UI design 
+            with resilient backend infrastructure.
           </p>
           <p className={styles.paragraph}>
-            My expertise lies in managing complex app states, engineering real-time data layers 
-            using WebSockets, and implementing VoIP calling. I am comfortable writing custom native 
-            handles when standard wrappers fall short, ensuring that cross-platform limitations never 
-            get in the way of performance.
+            My expertise spans end-to-end product engineering—from designing relational schemas with 
+            Supabase and building responsive web interfaces to managing complex state, real-time WebSockets, 
+            and custom native integrations for iOS and Android.
           </p>
           <p className={styles.paragraph}>
-            I enjoy clean architecture, type safety with TypeScript, and agile collaboration. 
-            Whether optimizing application startup performance or integrating AI-powered workflow automation, 
-            I focus on writing testable, reusable, and modular code.
+            I value clean architecture, type safety with TypeScript, and agile collaboration. 
+            Whether optimizing application render performance, implementing secure checkout flows, 
+            or integrating AI-powered workflows, I focus on shipping maintainable and production-ready code.
           </p>
         </div>
       </div>

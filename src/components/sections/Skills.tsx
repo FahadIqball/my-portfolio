@@ -1,7 +1,17 @@
-import { skillCategories, mobileFeatures } from "@/data/skills";
+import { skillCategories, coreCapabilities } from "@/data/skills";
 import TechIcon from "../ui/TechIcon";
 import AnimatedSection from "../ui/AnimatedSection";
+import { Globe, Database, Bell, Zap, Smartphone, CreditCard } from "lucide-react";
 import styles from "./Skills.module.css";
+
+const iconMap = {
+  globe: Globe,
+  database: Database,
+  bell: Bell,
+  zap: Zap,
+  smartphone: Smartphone,
+  "credit-card": CreditCard,
+};
 
 export default function Skills() {
   return (
@@ -32,16 +42,25 @@ export default function Skills() {
             ))}
           </div>
 
-          {/* Mobile Features Highlight Box */}
+          {/* Web & Mobile Capabilities Highlight Box */}
           <div className={styles.featuresSection}>
-            <h3 className={styles.featuresTitle}>Mobile Features & Capabilities</h3>
+            <div className={styles.featuresHeader}>
+              <span className="mono-label">ARCHITECTURAL HIGHLIGHTS</span>
+              <h3 className={styles.featuresTitle}>Web & Mobile Capabilities</h3>
+            </div>
+            
             <div className={styles.featuresGrid}>
-              {mobileFeatures.map((feature) => (
-                <div key={feature} className={styles.featureItem}>
-                  <span className={styles.bullet}>[ ]</span>
-                  <span className={styles.featureText}>{feature}</span>
-                </div>
-              ))}
+              {coreCapabilities.map((item) => {
+                const IconComponent = iconMap[item.icon];
+                return (
+                  <div key={item.title} className={styles.featureItem}>
+                    <div className={styles.iconBadge}>
+                      <IconComponent size={16} strokeWidth={2} />
+                    </div>
+                    <span className={styles.featureText}>{item.title}</span>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>

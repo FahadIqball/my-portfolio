@@ -11,7 +11,7 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Fahad Iqbal",
-    "jobTitle": "React Native Developer",
+    "jobTitle": "Full-Stack & Mobile Developer",
     "url": "https://fahadiqbal.dev",
     "sameAs": [
       "https://github.com/FahadIqball",
