@@ -19,6 +19,17 @@ export const projects: ProjectItem[] = [
     details: "Built the mobile client featuring real-time state synchronization, foreground/background call notifications, and low-latency WebSockets.",
   },
   {
+    id: "miss-stitch",
+    title: "Miss Stitch — Luxury Couture & Atelier System",
+    description: "A full-stack Pakistani luxury ethnic e-commerce platform and workshop atelier operations system bridging unstitched designer fabrics with bespoke made-to-measure tailoring.",
+    tech: ["Next.js 16", "React 19", "Supabase", "Tailwind CSS v4", "Zustand"],
+    slug: "miss-stitch",
+    github: "https://github.com/FahadIqball/Miss-Stitch-Web",
+    live: "https://miss-stitch.vercel.app",
+    details: "Architected the full-stack system with Next.js 16 App Router, Supabase PostgreSQL RLS, bespoke tailoring measurement engines, and a workshop operations portal with printable tailor job cards.",
+  },
+
+  {
     id: "framework-detector",
     title: "App Framework Detector",
     description: "Analysis tool for detecting mobile application frameworks and libraries used in Android apps, developed by scanning metadata and signatures.",
